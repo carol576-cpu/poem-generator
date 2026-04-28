@@ -8,12 +8,7 @@ async function generatePoem(event) {
 
   let apiKey = "133b8a2od0f4ca2tfb020bd8b7e2e212";
 
-  let prompt = `Here is your poem about Love:
-
-The Love shines so bright,
-A gentle glow in silent night.
-Whispered dreams begin to flow,
-In places only hearts can know. ${input}`;
+  let prompt = `Write a short creative poem about ${input}. Use simple and beautiful language.`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&key=${apiKey}`;
 
